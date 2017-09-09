@@ -1,4 +1,4 @@
-package isra;
+package triangulo;
 
 public class Triangulo {
 
