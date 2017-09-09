@@ -34,8 +34,7 @@ public class ValoresTest {
 	@Test
 	public void testInsMaiorIgual10() {
 		int cont = 10;
-		while (cont < 10)
-			assertTrue("A Função deve aceitar qtd < 10", valores.ins(1));
+		while (cont < 10) assertTrue("A Função deve aceitar qtd < 10", valores.ins(1)); 	
 		assertFalse("A função não deve aceitar qtd = 10", valores.ins(2));
 		assertFalse("A função não deve aceitar qtd > 10", valores.ins(3));
 	}
@@ -146,7 +145,7 @@ public class ValoresTest {
 		valores.ins(5);
 		valores.ins(10);
 		valores.ins(15);
-		double expected = 10.0;
+		double expected = 10;
 		double result = valores.mean();
 		assertEquals("A média de 5 10 e 15 é 10.0", result, expected, 000.1);
 	}
