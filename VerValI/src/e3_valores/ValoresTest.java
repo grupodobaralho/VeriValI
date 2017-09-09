@@ -84,32 +84,32 @@ public class ValoresTest {
 	// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 	@Test
-	void testSizeListaVazia() {
+	public void testSizeListaVazia() {
 		assertEquals("A lista está vazia=0", valores.size(), 0);
 	}
 
 	@Test
-	void testSizeListaContem1() {
+	public void testSizeListaContem1() {
 		valores.ins(1);
 		assertEquals("A lista contém 1", valores.size(), 1);
 	}
 
 	@Test
-	void testSizeListaContem2() {
+	public void testSizeListaContem2() {
 		valores.ins(1);
 		valores.ins(1);
 		assertEquals("A lista contém 2", valores.size(), 2);
 	}
 
 	@Test
-	void testSizeListaVaziaPosDel() {
+	public void testSizeListaVaziaPosDel() {
 		valores.ins(1);
 		valores.del(0);
 		assertEquals("A lista continha um e agora está vazia", valores.size(), 0);
 	}
 
 	@Test
-	void testSizeListaContem1PosDel() {
+	public void testSizeListaContem1PosDel() {
 		valores.ins(1);
 		valores.ins(1);
 		valores.del(0);
@@ -120,12 +120,12 @@ public class ValoresTest {
 	// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 	@Test
-	void testMeanListaVazia() {
+	public void testMeanListaVazia() {
 		assertEquals("A lista está vazia, deve retornar 0", valores.mean(), 0, 000.1);
 	}
 
 	@Test
-	void testMeanValorUnico() {
+	public void testMeanValorUnico() {
 		valores.ins(5);
 		double expected = 5;
 		double result = valores.mean();
@@ -133,7 +133,7 @@ public class ValoresTest {
 	}
 
 	@Test
-	void testMeanDoisValores() {
+	public void testMeanDoisValores() {
 		valores.ins(5);
 		valores.ins(10);
 		double expected = 7.5;
@@ -142,7 +142,7 @@ public class ValoresTest {
 	}
 
 	@Test
-	void testMeanTresValores() {
+	public void testMeanTresValores() {
 		valores.ins(5);
 		valores.ins(10);
 		valores.ins(15);
