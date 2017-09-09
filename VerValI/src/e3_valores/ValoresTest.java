@@ -33,8 +33,11 @@ public class ValoresTest {
 
 	@Test
 	public void testInsMaiorIgual10() {
-		int cont = 10;
-		while (cont < 10) assertTrue("A Função deve aceitar qtd < 10", valores.ins(1)); 	
+		int cont = 0;
+		while (cont < 10) {
+			assertTrue("A Função deve aceitar qtd < 10", valores.ins(1));
+			cont++;
+		}
 		assertFalse("A função não deve aceitar qtd = 10", valores.ins(2));
 		assertFalse("A função não deve aceitar qtd > 10", valores.ins(3));
 	}
@@ -70,14 +73,14 @@ public class ValoresTest {
 		assertEquals("O índice está vazio", valores.del(1), -1);
 	}
 
-	@Test
+	@Test(expected = IndexOutOfBoundsException.class)
 	public void testDelIndice10() {
-		assertEquals("O índice está vazio", valores.del(10), -1);
+		valores.del(10);
 	}
 
-	@Test
+	@Test(expected = IndexOutOfBoundsException.class)
 	public void testDelIndiceMaior10() {
-		assertEquals("O índice está vazio", valores.del(11), -1);
+		valores.del(11);
 	}
 
 	// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
