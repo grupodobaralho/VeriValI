@@ -23,7 +23,7 @@ public class ValoresTest {
 
 	@Test
 	public void testInsZero() {
-		assertFalse("A função não deve aceitar 0", valores.ins(1));
+		assertFalse("A função não deve aceitar 0", valores.ins(0));
 	}
 
 	@Test

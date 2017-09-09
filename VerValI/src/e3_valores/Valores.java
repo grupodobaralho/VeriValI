@@ -1,11 +1,24 @@
 package e3_valores;
 
+
 public class Valores implements ValoresITF {
+	
+	private int[] armazenador;
+	private int cont;
+	
+	public Valores() {
+		armazenador = new int[9];
+		cont = 0;
+	}
 
 	@Override
 	public boolean ins(int v) {
-		// TODO Auto-generated method stub
-		return false;
+		if(v > 0) {
+			armazenador[cont] = v;
+			cont++;
+			return true;
+		}
+		return true;
 	}
 
 	@Override
