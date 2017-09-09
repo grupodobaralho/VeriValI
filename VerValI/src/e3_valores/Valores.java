@@ -1,4 +1,4 @@
-package valores;
+package e3_valores;
 
 public class Valores implements ValoresITF {
 

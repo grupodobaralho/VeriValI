@@ -1,4 +1,4 @@
-package valores;
+package e3_valores;
 
 import static org.junit.Assert.*;
 

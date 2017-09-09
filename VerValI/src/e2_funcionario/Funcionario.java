@@ -1,4 +1,4 @@
-package funcionario;
+package e2_funcionario;
 
 public class Funcionario {
 	private String nome;

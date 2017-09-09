@@ -1,4 +1,4 @@
-package funcionario;
+package e2_funcionario;
 
 import static org.junit.Assert.*;
 

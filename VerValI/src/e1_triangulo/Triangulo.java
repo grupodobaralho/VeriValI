@@ -1,4 +1,4 @@
-package triangulo;
+package e1_triangulo;
 
 public class Triangulo {
 

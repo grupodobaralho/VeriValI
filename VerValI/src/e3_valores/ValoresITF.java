@@ -1,4 +1,4 @@
-package valores;
+package e3_valores;
 
 interface ValoresITF {
 	boolean ins(int v);// insere um valor
